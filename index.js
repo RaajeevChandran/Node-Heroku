@@ -5,4 +5,4 @@ app.get("/",(req,res)=>{
     res.send("Hello world")
 })
 
-app.listen(8000,()=>console.log("API RUNNING"))
+app.listen(process.env.PORT || 8000,()=>console.log("API RUNNING"))
